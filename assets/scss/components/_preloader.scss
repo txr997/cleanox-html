@@ -1,0 +1,136 @@
+/* 
+	preloader-css-start
+*/
+
+
+.xr-preloader {
+    position: fixed;
+    inset: 0;
+    background: #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    overflow: hidden;
+    transition: .3s;
+
+    &-inner {
+        text-align: center;
+    }
+    
+
+    &-text {
+        font-size: 60px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        color: #fff;
+
+        @media #{$md} {
+            font-size: 50px;
+        }
+
+        @media #{$xs} {
+            font-size: 30px;
+        }
+
+        @media #{$sm} {
+            font-size: 40px;
+        }
+
+        span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(80px);
+            animation: letterReveal 0.8s forwards;
+
+
+            &:nth-child(1) {
+                color: var(--xr-clr-pr-1);
+            }
+        }
+    }
+
+    &-line-wrap {
+        width: 200px;
+        height: 2px;
+        background: rgba(255,255,255,0.1);
+        margin: 30px auto 0;
+        overflow: hidden;
+    }
+
+    &-line {
+        width: 0%;
+        height: 100%;
+        background: var(--xr-clr-pr-1);
+        animation: loadLine 2s ease forwards infinite;
+    }
+
+
+    &:is(.loaded) {
+        opacity: 0;
+    }
+    
+
+
+    @keyframes letterReveal {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    @keyframes loadLine {
+        to {
+            width: 100%;
+        }
+    }
+
+    
+    &:is(.has-home-2) {
+        .xr-preloader-text {
+            span {
+                &:nth-child(1) {
+                    color: var(--xr-clr-pr-2);
+                }
+            }
+        }
+        .xr-preloader-line {
+            background: var(--xr-clr-pr-2);
+        }
+    }
+    
+    &:is(.has-home-3) {
+        .xr-preloader-text {
+            span {
+                &:nth-child(1) {
+                    color: var(--xr-clr-pr-3);
+                }
+            }
+        }
+        .xr-preloader-line {
+            background: var(--xr-clr-gd-3);
+        }
+    }
+}
+
+
+
+.xr-preloader-text span:nth-child(1){ animation-delay: .1s;}
+.xr-preloader-text span:nth-child(2){ animation-delay: .2s;}
+.xr-preloader-text span:nth-child(3){ animation-delay: .3s;}
+.xr-preloader-text span:nth-child(4){ animation-delay: .4s;}
+.xr-preloader-text span:nth-child(5){ animation-delay: .5s;}
+.xr-preloader-text span:nth-child(6){ animation-delay: .6s;}
+.xr-preloader-text span:nth-child(7){ animation-delay: .7s;}
+.xr-preloader-text span:nth-child(8){ animation-delay: .8s;}
+
+
+
+
+/* 
+	preloader-css-end
+*/
+
+
+  

@@ -1,0 +1,67 @@
+/* 
+    hero-1-start
+*/
+.cx-hero-1 {
+    &-area {
+        z-index: 2;
+    }
+
+    &-bg-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        margin-right: -72px;
+
+        @media #{$xl} {
+            margin-right: 0;
+        }
+
+        @media #{$lg,$md,$xs} {
+            margin-right: 0;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-content {
+        width: 100%;
+        max-width: 540px;
+        margin-top: 170px;
+
+        @media #{$xs} {
+            margin-top: 100px;
+        }
+    }
+
+    &-title {
+        font-size: 64px;
+        line-height: 1.062;
+        font-weight: 700;
+        margin-bottom: 21px;
+
+        @media #{$sm} {
+            font-size: 50px;
+        }
+
+        @media #{$xs} {
+            font-size: 40px;
+        }
+    }
+
+    &-disc {
+        margin-bottom: 35px;
+    }
+    
+}
+
+/* 
+    hero-1-end
+*/

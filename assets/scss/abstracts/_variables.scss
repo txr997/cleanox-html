@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+:root {
+  scroll-behavior: inherit;
+
+  --cx-font-1: "Inter", sans-serif;
+  --cx-font-2: "Rethink Sans", sans-serif;
+
+  --cx-clr-pr-1: #00A650;
+
+  --cx-clr-sd-1: #F2D702;
+
+  --cx-clr-h-1: #003519;
+  
+  --cx-clr-p-1: #4C504E;
+
+  --cx-clr-gd-3: linear-gradient(135deg, #EF31BF 0%, #2754E9 100%);
+
+  --cx-cube-1: cubic-bezier(.18,.82,.41,1);
+
+  
+}
+
+$over: "(min-width: 1800px)";
+$xxxl: "only screen and (min-width: 1600px) and (max-width: 1799px)";
+$xxl: "only screen and (min-width: 1400px) and (max-width: 1599px)";
+$xl: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
+$xs: "(max-width: 767px)";

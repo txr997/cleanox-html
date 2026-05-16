@@ -1,0 +1,108 @@
+/* 
+    client-1-start
+*/
+.cx-client-1 {
+    &-sec-title {
+        font-size: 44px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 58px;
+
+
+        
+        @media #{$xxl} {
+            font-size: 40px;
+        }
+        @media #{$xl} {
+            font-size: 36px;
+        }
+        @media #{$lg} {
+            font-size: 32px;
+        }
+        @media #{$md} {
+            font-size: 28px;
+        }
+
+        @media #{$xs} {
+            font-size: 20px;
+        }
+        @media #{$sm} {
+            font-size: 24px;
+        }
+
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr ;
+        align-items: start;
+        
+        @media #{$md} {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+
+        &-middle {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            @media #{$xs} {
+                grid-template-columns: 1fr;    
+            }
+
+            @media #{$sm} {
+                grid-template-columns: 1fr 1fr;    
+            }
+        }
+
+        &-left {
+            @media #{$over,$xxxl,$xxl,$xl,$lg} {
+                margin-top: -128px;
+            }
+        }
+
+        &-right {
+            @media #{$over,$xxxl,$xxl,$xl,$lg} {
+                margin-top: -128px;
+            }
+        }
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 128px;
+        padding: 12px;
+        border: 1px solid #C2CEC8;
+        border-radius: 12px;
+        margin-left: -1px;
+        margin-top: -1px;
+
+        img {
+            transition: .3s var(--cx-cube-1);
+            opacity: 56%;
+        }
+
+        &:hover {
+            position: relative;
+            z-index: 1;
+            border-color: var(--cx-clr-pr-1);
+            background: linear-gradient(102.81deg, rgba(0, 166, 80, 0.128) 1.35%, rgba(255, 200, 37, 0.32) 85.55%);
+
+            img {
+                opacity: 1;
+            }
+        }
+    }
+    
+}
+
+
+
+/* 
+    client-1-end
+*/
