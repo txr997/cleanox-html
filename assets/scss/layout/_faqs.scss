@@ -1,0 +1,135 @@
+
+.cx-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &-item {
+        background: #F3FDF4;
+        border: 1px solid rgba(1, 17, 9, 0.2);
+        border-radius: 12px;
+
+        .item-title {
+            background: transparent;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 20px 22px;
+            padding-left: 32px;
+            text-align: left;
+            transition: 0.2s;
+    
+
+            .icon {
+                width: 36px;
+                height: 36px;
+                background: var(--cx-clr-pr-1);
+                font-size: 12px;
+                color: #fff;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 0 auto;
+                margin-left: auto;
+                transition: .5s var(--cx-cube-1);
+
+                i {
+                    transition: .5s var(--cx-cube-1);
+                }
+            }
+    
+            &:is(:not(.collapsed)) {
+                .icon {
+                    background: #fff;
+                    color: var(--cx-clr-pr-1);
+
+                    i {
+                        &::before {
+                            content: "\f068";
+                        }
+                    }
+                }
+
+            }
+
+            &:is(.collapsed) {
+                &:hover {
+                }
+            }
+
+        }
+        
+        .item-disc {
+            padding: 25px 32px;
+            padding-top: 0;
+        }
+
+        .accordion-collapse {
+            &:is(.show) {
+                .item-disc {
+                    border-color: rgb(255 255 255 / 30%);
+                }
+            }
+        } 
+
+        &:is(.active) {
+            background-color: var(--cx-clr-sd-1);
+        }
+
+    }
+
+    
+}
+
+
+.cx-faqs-1 {
+    &-area {
+        background-color: #F3FDF4;
+    }
+    &-container {
+        background-color: #FFFFFF;
+        max-width: 1584px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 24px;
+        position: relative;
+        z-index: 1;
+        margin-top: -297px;
+
+        .bg-shape {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
+    &-wrap {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 1.3fr;
+        align-items: center;
+
+        @media #{$lg,$md,$xs} {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-sec-title {
+        .cx-sec-title-1 {
+            margin-bottom: 95px;
+        }
+        .vector-1 {
+            margin-bottom: 60px;
+        }
+        .sec-disc {
+            max-width: 430px;
+        }
+    }
+}
+
+
+

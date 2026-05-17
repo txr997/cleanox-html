@@ -1,0 +1,187 @@
+/* 
+    projects-1-start
+*/
+.cx-projects-1 {
+    &-area {
+        background: #F3FDF4;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.05fr 1fr;
+        gap: 20px;
+
+
+        @media #{$over} {
+            margin-left: -236px;
+            margin-right: -236px; 
+        }
+        
+        @media #{$lg} {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr ;
+        }
+
+        .item-col {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    
+    &-card {
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
+        height: 604px;
+
+        @media #{$xxxl,$xxl,$xl,$lg,$md,$xs} {
+            height: 404px; 
+        }
+
+        &::after {
+            content: "";
+            inset: 0;
+            background: linear-gradient(120.59deg, rgba(0, 166, 80, 0.192) 1.76%, rgba(255, 200, 37, 0.48) 72.95%);
+            position: absolute;
+            transition: .5s var(--cx-cube-1);
+            opacity: 0;
+        }
+
+        &::before {
+            content: "";
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            position: absolute;
+            width: 100%;
+            height: 503px;
+            background: linear-gradient(180deg, rgba(0, 53, 25, 0) 0%, #003519 129.93%);
+            z-index: 1;
+            transition: .5s var(--cx-cube-1);
+            opacity: 0;
+        }
+
+        .content-wrap {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 42px 52px;
+            width: 100%;
+            z-index: 2;
+            transition: .5s var(--cx-cube-1);
+            transform: translateY(40px);
+            opacity: 0;
+            visibility: hidden;
+
+            @media #{$xxxl,$xxl,$xl,$lg,$md,$xs} {
+                padding: 42px 22px;
+            }
+        }
+
+        .item-btn {
+            font-family: var(--cx-font-2);
+            background: #fff;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--cx-clr-h-1);
+            border: 1px solid #BDBF30;
+            border-radius: 100px;
+            padding: 8px;
+            padding-left: 30px;
+            margin-top: 40px;
+    
+            .icon {
+                width: 48px;
+                height: 48px;
+                background: linear-gradient(102.81deg, #00A650 1.35%, #FFC825 85.55%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                border-radius: 50%;
+                transform: rotate(-45deg);
+                transition: .5s var(--cx-cube-1);
+            }
+
+            .text {
+                transition: .5s var(--cx-cube-1);
+            }
+
+            &:hover {
+                .icon {
+                    transform: rotate(0deg);
+                }
+                .text {
+                    color: var(--cx-clr-pr-1);
+                }
+            }
+        }
+
+        .title {
+            font-size: 32px;
+            color: #fff;
+            transition: .5s var(--cx-cube-1);
+
+            &:hover {
+                color: var(--cx-clr-sd-1);
+            }
+
+            @media #{$xxxl,$xxl,$xl,$lg,$md,$xs} {
+                font-size: 24px;
+            }
+        }
+
+        .disc {
+            color: #fff;
+            opacity: 80%;
+            margin-top: 16px;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+            &::before {
+                opacity: 1;
+            }
+
+            .content-wrap {
+                transform: translateY(0px);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        
+        &:is(.has-big-card) {
+            height: 868px;
+
+            @media #{$xxxl,$xxl,$xl,$lg,$md,$xs} {
+                height: 604px; 
+            }
+    
+        }
+
+        &:is(.has-sm-card) {
+            height: 244px;
+
+            .title {
+                display: none;
+            }
+            .disc {
+                display: none;
+            }
+        }
+    }
+    
+}
+/* 
+    projects-1-end
+*/
