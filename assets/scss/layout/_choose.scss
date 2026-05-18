@@ -50,7 +50,11 @@
             color: #fff;
         }
         
-
+        .cx-pr-btn-1 {
+            &:hover {
+                background-color: #000;
+            }
+        }
     }    
 
     &-img {
@@ -119,11 +123,20 @@
                 mix-blend-mode: luminosity;
                 margin-bottom: 28px;
                 transition: .5s var(--cx-cube-1);
+
+                img {
+                    transition: .5s var(--cx-cube-1);
+                }
             }
             
             .title {
                 font-size: 22px;
                 margin-bottom: 8px;
+                transition: .5s var(--cx-cube-1);
+
+                &:hover {
+                    color: var(--cx-clr-sd-1);
+                }
             }
 
             .disc {
@@ -136,6 +149,10 @@
             &:hover {
                 .img-elm {
                     mix-blend-mode: normal;
+
+                    img {
+                        transform: scale(1.05);
+                    }
                 }
             }
         }

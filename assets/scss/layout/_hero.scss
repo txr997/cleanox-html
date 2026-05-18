@@ -59,7 +59,10 @@
     &-disc {
         margin-bottom: 35px;
     }
-    
+ 
+    &-img {
+        pointer-events: none;
+    }
 }
 
 /* 

@@ -144,6 +144,21 @@
             position: absolute;
             right: 0;
             top: 0;
+            transition: .5s var(--cx-cube-1);
+
+            i {
+                transform: rotate(-45deg);
+                transition: .5s var(--cx-cube-1);
+            }
+            
+
+            &:hover {
+                background-color: var(--cx-clr-sd-1);
+                i {
+                    transform: rotate(0deg);
+                }
+    
+            }
         }
         
 
@@ -166,6 +181,10 @@
                     border-radius: 12px;
                     height: 260px;
                     margin-bottom: 24px;
+
+                    img {
+                        transition: .5s var(--cx-cube-1);
+                    }
                 }
 
                 .title {
@@ -191,6 +210,17 @@
                     background-color: #FFEFAA;
                 }
                 
+
+
+                &:hover {
+                    z-index: 2;
+
+                    .card-img {
+                        img {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
             }
         }
         
@@ -362,7 +392,19 @@
             border-radius: 50%;
             color: #fff;
             font-size: 20px;
+            transition: .5s var(--cx-cube-1);
+
+
         }
+
+        &:hover {
+            .icon-elm {
+                background-color: var(--cx-clr-sd-1);
+                color: var(--cx-clr-pr-1);
+            }
+
+        }
+
     }
     
     
@@ -387,6 +429,16 @@
             height: 52px;
             background-color: #fff;
             border-radius: 50%;
+            transition: .5s var(--cx-cube-1);
+        }
+        .circle-img {
+            animation: wa-rotated 20s linear infinite;
+        }
+
+        &:hover {
+            .icon-elm {
+                background-color: var(--cx-clr-sd-1);
+            }
         }
     }
 

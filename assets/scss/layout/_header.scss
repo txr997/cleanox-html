@@ -76,6 +76,7 @@
             align-items: center;
             gap: 8px;
             position: relative;
+            transition: .5s var(--cx-cube-1);
 
 
             i {
@@ -93,6 +94,10 @@
                     background-color: #C3CEC5;
                 }
             }
+
+            &:hover {
+                color: var(--cx-clr-pr-1);
+            }
             
         }
         
@@ -107,6 +112,12 @@
             color: #000;
             padding: 0 13px;
             border-left: 1px solid #C3CEC5;
+            transition: .5s var(--cx-cube-1);
+
+            &:hover {
+                color: var(--cx-clr-pr-1);
+            }
+
         }
     }
     
@@ -148,6 +159,11 @@
         background-color: var(--cx-clr-pr-1);
         color: #fff;
         font-size: 20px;
+        transition: .5s var(--cx-cube-1);
+
+        &:hover {
+            background-color: var(--cx-clr-sd-1);
+        }
     }
 }
 

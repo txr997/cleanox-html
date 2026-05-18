@@ -44,14 +44,23 @@
         .blog-img {
             height: 348px;
             border-radius: 0 0 20px 20px;
+
+            img {
+                transition: .5s var(--cx-cube-1);
+            }
         }
 
         .title {
             font-size: 26px;
             margin-bottom: 31px;
+            transition: .5s var(--cx-cube-1);
 
             @media #{$xl,$lg,$md,$xs} {
                 font-size: 22px;
+            }
+
+            &:hover {
+                color: var(--cx-clr-pr-1);
             }
         }
 
@@ -81,6 +90,12 @@
             font-size: 14px;
             border: 2px solid var(--cx-clr-pr-1);
             border-radius: 50%;
+            transition: .5s var(--cx-cube-1);
+            
+            &:hover {
+                background-color: var(--cx-clr-pr-1);
+                color: #fff;
+            }
         }
 
         .date-x-categories {
@@ -106,6 +121,15 @@
 
             @media #{$xl,$lg,$md,$xs} {
                 padding: 31px 22px;
+            }
+        }
+
+
+        &:hover {
+            .blog-img {
+                img {
+                    transform: scale(1.03);
+                }
             }
         }
     }

@@ -30,7 +30,7 @@
   0% {
     opacity: 0;
     perspective: 2000px;
-    transform: rotateX(83deg) translateY(82px);
+    transform: rotateX(20deg) translateY(20px);
     filter: blur(5px);
   }
 
@@ -43,7 +43,7 @@
 .fadeInUp2 {
   -webkit-animation-name: fadeInUp2;
   animation-name: fadeInUp2;
-  animation-duration: 1000ms;
+  animation-duration: 600ms;
   animation-timing-function: var(--xr-cube-1);
 }
 
@@ -67,7 +67,7 @@
 .fadeInDown2 {
   -webkit-animation-name: fadeInDown2;
   animation-name: fadeInDown2;
-  animation-duration: 1000ms;
+  animation-duration: 600ms;
   animation-timing-function: var(--xr-cube-1);
 }
 
@@ -92,7 +92,7 @@
 .fadeInRight2 {
   -webkit-animation-name: fadeInRight2;
   animation-name: fadeInRight2;
-  animation-duration: 1000ms;
+  animation-duration: 600ms;
   animation-timing-function: var(--xr-cube-1);
 }
 
@@ -116,7 +116,7 @@
 .fadeInLeft2 {
   -webkit-animation-name: fadeInLeft2;
   animation-name: fadeInLeft2;
-  animation-duration: 1000ms;
+  animation-duration: 600ms;
   animation-timing-function: var(--xr-cube-1);
 }
 
@@ -338,10 +338,13 @@
     opacity: 1;
   }
 }
-.animate__backInDown2 {
+.backInDown2 {
   -webkit-animation-name: backInDown2;
   animation-name: backInDown2;
 }
+
+
+
 /* 
     wow-plus-end
 */

@@ -96,6 +96,7 @@
             padding: 8px;
             padding-left: 30px;
             margin-top: 40px;
+            transition: .5s var(--cx-cube-1);
     
             .icon {
                 width: 48px;
@@ -115,11 +116,14 @@
             }
 
             &:hover {
+                background: var(--cx-clr-pr-1);
+
                 .icon {
                     transform: rotate(0deg);
                 }
                 .text {
-                    color: var(--cx-clr-pr-1);
+                    color: #fff;
+                    
                 }
             }
         }

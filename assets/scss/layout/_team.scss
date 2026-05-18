@@ -85,6 +85,7 @@
                 padding: 0;
                 opacity: 12%;
                 z-index: -1;
+                transition: .5s var(--cx-cube-1);
             }
         }
     
@@ -153,6 +154,18 @@
         .title {
             font-size: 24px;
             margin-bottom: 10px;
+            transition: .5s var(--cx-cube-1);
+
+            &:hover {
+                color: var(--cx-clr-sd-1);
+            }
+        }
+
+
+        &:hover {
+            .img-text {
+                opacity: 50%;
+            }
         }
 
     }
