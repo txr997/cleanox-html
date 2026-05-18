@@ -33,6 +33,10 @@
         @media #{$xl,$lg,$md,$xs} {
             background-color: #002111;
         }
+
+        path {
+            fill: #0A1911;
+        }
     }
     &-bg-vector {
         position: absolute;

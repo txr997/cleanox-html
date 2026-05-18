@@ -2793,6 +2793,9 @@ input:focus::placeholder, textarea:focus::placeholder {
     background-color: #002111;
   }
 }
+.cx-about-1-bg-shape path {
+  fill: #0A1911;
+}
 .cx-about-1-bg-vector {
   position: absolute;
   top: 28%;
@@ -4032,50 +4035,37 @@ input:focus::placeholder, textarea:focus::placeholder {
   max-width: 610px;
 }
 .cx-testimonial-1-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 38px;
-  align-items: end;
   position: relative;
   z-index: 1;
+  display: grid;
+  gap: 210px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 767px) {
   .cx-testimonial-1-grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .cx-testimonial-1-grid {
-    grid-template-columns: 1fr;
+    gap: 150px;
   }
 }
 .cx-testimonial-1-grid .item-col {
   display: flex;
-  flex-direction: column;
-  gap: 60px;
+  gap: 38px;
+  justify-content: space-between;
 }
-.cx-testimonial-1-grid .item-col:nth-child(1) {
-  padding-bottom: 132px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .cx-testimonial-1-grid .item-col:nth-child(1) {
-    padding-bottom: 0;
+@media (max-width: 767px) {
+  .cx-testimonial-1-grid .item-col {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
-.cx-testimonial-1-grid .item-col:nth-child(3) {
-  padding-bottom: 132px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .cx-testimonial-1-grid .item-col:nth-child(3) {
-    padding-bottom: 0;
-  }
+.cx-testimonial-1-grid .item-col:nth-child(2) {
+  justify-content: end;
 }
 .cx-testimonial-1-card {
   background: #FFFFFF;
   box-shadow: 0px 0px 28px rgba(0, 53, 25, 0.16);
   border-radius: 20px;
   padding: 52px 48px;
+  width: 100%;
+  max-width: 412px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .cx-testimonial-1-card {
@@ -4120,7 +4110,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 .cx-testimonial-1-big-title {
   position: absolute;
   left: 0;
-  top: 39%;
+  top: 49%;
   transform: translateY(-50%);
   width: 100%;
   z-index: -1;

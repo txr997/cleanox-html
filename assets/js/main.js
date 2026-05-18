@@ -9,10 +9,6 @@
 "use strict";
 
 
-
-
-
-
 /* 
 	windows-load-function
 */
@@ -178,6 +174,57 @@ function afterPreloader() {
 
 
 
+/* 
+	after-page-load-start
+*/
+function afterPageLoad() {
+
+	/* 
+		add-active-class
+	*/
+	const waAddClass = gsap.utils.toArray('.wa_add_class');
+	waAddClass.forEach(waAddClassItem => {
+		gsap.to(waAddClassItem, {
+			scrollTrigger: {
+				trigger: waAddClassItem,
+				start: "top 90%",
+				end: "bottom bottom",
+				toggleActions: "play none none reverse",
+				toggleClass: "active",
+				once: true,
+				markers: false,
+			}
+		});
+	});
+
+
+
+	/* 
+		wow-activation
+	*/
+	if($('.wow').length){
+		var wow = new WOW({
+			boxClass:     'wow',
+			animateClass: 'animated',
+			offset:       50,
+			mobile:       true,
+			live:         true
+		});
+		wow.init();
+	};
+
+
+
+
+		
+
+/* 
+	after-page-load-start
+*/
+}
+
+
+
 // image-animation-1
 document.querySelectorAll(".vy-cover-trigger").forEach(trigger => {
 
@@ -248,75 +295,41 @@ if ($('.cx_services_1_slider').length) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
-	after-page-load-start
+	testimonial-1-animation
 */
-function afterPageLoad() {
+if (window.matchMedia("(min-width: 1200px)").matches) {
 
-	/* 
-		add-active-class
-	*/
-	const waAddClass = gsap.utils.toArray('.wa_add_class');
-	waAddClass.forEach(waAddClassItem => {
-		gsap.to(waAddClassItem, {
-			scrollTrigger: {
-				trigger: waAddClassItem,
-				start: "top 90%",
-				end: "bottom bottom",
-				toggleActions: "play none none reverse",
-				toggleClass: "active",
-				once: true,
-				markers: false,
-			}
-		});
+
+	var portfolio1title = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".cx-testimonial-1-grid",
+			start: "top 40%",
+			end: "bottom bottom",
+			toggleActions: "play none none reverse",
+			scrub: true,
+			markers: false,
+		},
 	});
 
-
-
-	/* 
-		wow-activation
-	*/
-	if($('.wow').length){
-		var wow = new WOW({
-			boxClass:     'wow',
-			animateClass: 'animated',
-			offset:       50,
-			mobile:       true,
-			live:         true
-		});
-		wow.init();
-	};
-
-
-
-
-		
-
-/* 
-	after-page-load-start
-*/
+	portfolio1title.from(".as_t1_item1", {
+		yPercent: 60,
+	});
+	portfolio1title.from(".as_t1_item2", {
+		yPercent: 60,
+	},"<");	
+	portfolio1title.from(".as_t1_item3", {
+		yPercent: -130,
+	},"<");
+	portfolio1title.from(".as_t1_item4", {
+		xPercent: -100,
+	},"<");
+	
+  
+	
+	
 }
+
 
 
 
