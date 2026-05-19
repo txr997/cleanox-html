@@ -1,0 +1,149 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_cleanox_logo";
+    src: url("./flaticon_cleanox_logo.woff2?a75af6836a670640554364eadcaae9d9") format("woff2"),
+url("./flaticon_cleanox_logo.woff?a75af6836a670640554364eadcaae9d9") format("woff"),
+url("./flaticon_cleanox_logo.eot?a75af6836a670640554364eadcaae9d9#iefix") format("embedded-opentype"),
+url("./flaticon_cleanox_logo.ttf?a75af6836a670640554364eadcaae9d9") format("truetype"),
+url("./flaticon_cleanox_logo.svg?a75af6836a670640554364eadcaae9d9#flaticon_cleanox_logo") format("svg")
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_cleanox_logo !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-email:before {
+    content: "\f101";
+}
+.flaticon-location:before {
+    content: "\f102";
+}
+.flaticon-viber:before {
+    content: "\f103";
+}
+.flaticon-arrow-down-sign-to-navigate:before {
+    content: "\f104";
+}
+.flaticon-up-right-arrow:before {
+    content: "\f105";
+}
+.flaticon-play:before {
+    content: "\f106";
+}
+.flaticon-asterisk:before {
+    content: "\f107";
+}
+.flaticon-group:before {
+    content: "\f108";
+}
+.flaticon-team:before {
+    content: "\f109";
+}
+.flaticon-arrow-right:before {
+    content: "\f10a";
+}
+.flaticon-house:before {
+    content: "\f10b";
+}
+.flaticon-mop:before {
+    content: "\f10c";
+}
+.flaticon-window-cleaning:before {
+    content: "\f10d";
+}
+.flaticon-polisher:before {
+    content: "\f10e";
+}
+.flaticon-plunger:before {
+    content: "\f10f";
+}
+.flaticon-clean-house:before {
+    content: "\f110";
+}
+.flaticon-add:before {
+    content: "\f111";
+}
+.flaticon-minus:before {
+    content: "\f112";
+}
+.flaticon-share:before {
+    content: "\f113";
+}
+.flaticon-menu:before {
+    content: "\f114";
+}
+.flaticon-customer-service:before {
+    content: "\f115";
+}
+.flaticon-clean:before {
+    content: "\f116";
+}
+.flaticon-team-1:before {
+    content: "\f117";
+}
+.flaticon-eco:before {
+    content: "\f118";
+}
+.flaticon-home:before {
+    content: "\f119";
+}
+.flaticon-building:before {
+    content: "\f11a";
+}
+.flaticon-apartment:before {
+    content: "\f11b";
+}
+.flaticon-silhouette:before {
+    content: "\f11c";
+}
+.flaticon-office:before {
+    content: "\f11d";
+}
+.flaticon-office-1:before {
+    content: "\f11e";
+}
+.flaticon-window-cleaning-1:before {
+    content: "\f11f";
+}
+.flaticon-carpet:before {
+    content: "\f120";
+}
+.flaticon-machine:before {
+    content: "\f121";
+}
+.flaticon-polisher-1:before {
+    content: "\f122";
+}
+.flaticon-check:before {
+    content: "\f123";
+}
+.flaticon-cleaner:before {
+    content: "\f124";
+}
+.flaticon-reliability:before {
+    content: "\f125";
+}
+.flaticon-calendar:before {
+    content: "\f126";
+}
+.flaticon-rating:before {
+    content: "\f127";
+}
+

@@ -166,7 +166,24 @@ function afterPreloader() {
 	}	
 
 
+	// hero-2-slider
+	if ($('.cx_h2_slider').length) {
+
+		const cx_h2_slider = new Swiper('.cx_h2_slider', {
+			loop: true,
+			speed: 500,
+			slidesPerView: "auto",
+			spaceBetween: 24,
+			// autoplay: { delay: 4000 },
+
+
+			pagination: {
+				el: ".cx_h2_slider_pagination",
+				clickable: true,
+			},
+		});
 	
+	}
 /* 
 	after-preloader-end
 */

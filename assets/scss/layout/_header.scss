@@ -298,6 +298,144 @@
     header-1-end
 */
 
+/* 
+    header-2-start
+*/
+.cx-header-2 {
+    &-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: rgba(1, 17, 9, 0.26);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.64);
+        backdrop-filter: blur(6px);
+
+    }
+
+    &-logo {
+        width: 100%;
+        max-width: 84px;
+        height: 84px;
+        background-color: var(--cx-clr-pr-1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-right: 1px solid rgba(255, 255, 255, 0.64);
+    }
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media #{$lg,$md,$xs} {
+            justify-content: end;
+        }
+
+        .cx-header-2-support {
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$sm} {
+                display: inline-flex;
+            }
+        }
+    }
+
+    &-support {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .icon-elm {
+            width: 48px;
+            height: 48px;
+            background-color: var(--cx-clr-sd-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+        }
+
+        .title {
+            color: var(--cx-clr-sd-1);
+            font-size: 14px;
+            text-align: right;
+        }
+
+        .link-elm {
+            font-weight: 600;
+            color: #fff;
+            transition: .5s var(--cx-cube-1);
+
+            &:hover {
+                color:  var(--cx-clr-sd-1);
+            }
+        }
+    }
+    
+    
+}
+
+
+.cx-main-navigation {
+    &:is(.has-header-2) {
+        ul {
+            li {
+                a {
+                    color: #fff;
+                    padding: 28px 0;
+                }
+
+                &:is(.dropdown) {
+                    > a {
+                        &::before {
+                            top: 50%;
+                            color: var(--cx-clr-sd-1);
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &:hover {
+                    > a {
+                        color: var(--cx-clr-sd-1);
+                    }
+                }
+
+                .dropdown-menu {
+                    border: none;
+                    padding: 10px 0;
+
+                    li {
+                        a {
+                            color: #000;
+                        }
+
+                        &:hover {
+                            background-color: var(--cx-clr-sd-1);
+                            > a {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* 
+    header-2-end
+*/
+
 
 /* 
     sticky-header-css-start

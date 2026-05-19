@@ -14,6 +14,53 @@
 }
 
 
+.cx-offcanvas-btn-2 {
+    width: 84px;
+    height: 84px;
+    background: var(--cx-clr-pr-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.64);
+
+    span {
+        width: 22px;
+        height: 2px;
+        background: #fff;
+        border-radius: 4px;
+        transition: 0.5s var(--cx-cube-1);
+
+        &:nth-child(1) {
+            width: 14px;
+            transform: translateX(4px);
+        }
+
+        &:nth-child(3) {
+            width: 14px;
+            transform: translateX(-4px);
+        }
+    }
+
+    &:hover {
+        span {
+            &:nth-child(1) {
+                width: 22px;
+                transform: translateX(0px);
+            }
+    
+            &:nth-child(3) {
+                width: 22px;
+                transform: translateX(-0px);
+            }
+        }
+    }
+}
+
+
 .cx-pr-btn-1 {
     font-family: var(--cx-font-2);
     font-size: 17px;
@@ -33,6 +80,22 @@
     &:hover {
         color: #fff;
         background-color: var(--cx-clr-pr-1);
+    }
+
+
+    &:is(.has-v2) {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        padding: 16px 27px;
+        background-color: var(--cx-clr-pr-1);
+        color: #fff;
+
+        &:hover {
+            color: #000;
+            background-color: var(--cx-clr-sd-1);
+        }
     }
 }
 
