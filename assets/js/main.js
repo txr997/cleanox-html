@@ -312,9 +312,7 @@ if ($('.cx_services_1_slider').length) {
 }
 
 
-/* 
-	testimonial-1-animation
-*/
+// testimonial-1-animation
 if (window.matchMedia("(min-width: 1200px)").matches) {
 
 
@@ -347,7 +345,21 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
 	
 }
 
+// trust-2-animation
+const trust2tl = gsap.timeline({
+	scrollTrigger: {
+	  trigger: ".cx-trust-2-wrap", 
+	  start: "top 80%", 
+	  toggleActions: "play none none reverse", 
+	  markers: false,
+	}
+  });
 
+  trust2tl.from(".cx-trust-2-item", { 
+	  duration: 1,
+	  rotate: -360,
+	  x: -1320, 
+  })
 
 
 })(jQuery);

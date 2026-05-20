@@ -19,6 +19,14 @@
     margin-bottom: 0;
 }
 
+.cx-h-2 {
+    font-family: var(--cx-font-2);
+    font-weight: 600;
+    color: var(--cx-clr-h-2);
+    line-height: 1.142;
+    margin-bottom: 0;
+}
+
 
 .cx-subtitle-1 {
     font-family: var(--cx-font-2);
@@ -57,6 +65,18 @@
     }
 }
 
+.cx-subtitle-2 {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--cx-font-2);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--cx-clr-pr-1);
+    gap: 8px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
 
 .cx-sec-title-1 {
     font-family: var(--cx-font-2);
@@ -93,7 +113,30 @@
     }
 }
 
+.cx-sec-title-2 {
+    font-family: var(--cx-font-2);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.083;
+    color: var(--cx-clr-h-2);
+    margin-bottom: 0;
 
+    @media #{$lg} {
+        font-size: 42px;
+    }
+
+    @media #{$md} {
+        font-size: 38px;
+    }
+
+    @media #{$xs} {
+        font-size: 30px;
+    }
+
+    @media #{$sm} {
+        font-size: 34px;
+    }
+}
 /* 
     typography-end
 */
