@@ -1856,9 +1856,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-.wa-cursor:is(.-pointer) {
-  mix-blend-mode: difference;
-}
 .wa-cursor:is(.-pointer)::before {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -1866,6 +1863,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   -o-transform: scale(0.9);
   transform: scale(0.9);
   opacity: 1;
+}
+.wa-cursor:is(.-pointer) {
+  mix-blend-mode: difference;
 }
 .wa-cursor:is(.-text):before {
   -webkit-transform: scale(1);
@@ -5620,6 +5620,103 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 /* 
     step-2-end
+*/
+/* 
+    price-2-start
+*/
+.cx-price-2-top {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 36px;
+  margin-right: -140px;
+  margin-top: -50px;
+}
+.cx-price-2-toggle {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 18px;
+}
+.cx-price-2-toggle .nav-link {
+  font-size: 20px;
+  background: transparent;
+}
+.cx-price-2-toggle .nav-link:nth-child(1) {
+  padding-right: 42px;
+}
+.cx-price-2-toggle .nav-link:nth-child(3) {
+  padding-left: 42px;
+}
+.cx-price-2-toggle .nav-link:nth-child(1):is(.active) ~ .cx-price-2-toggle-btn::after {
+  left: 6px;
+}
+.cx-price-2-toggle-btn {
+  width: 64px;
+  height: 36px;
+  background: #E1F3E3;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.cx-price-2-toggle-btn::after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-color: var(--cx-clr-pr-1);
+  position: absolute;
+  top: 5px;
+  left: 32px;
+  border-radius: 50%;
+  transition: 0.5s var(--cx-cube-1);
+}
+.cx-price-2-wrap {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 2fr 1.06fr;
+  align-items: start;
+}
+.cx-price-2-card-single {
+  background: #EFF0EF;
+  border-radius: 20px;
+  padding: 40px 40px;
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cx-price-2-card-single .left-content {
+  width: 100%;
+  max-width: 290px;
+}
+.cx-price-2-card-single .card-btn {
+  justify-self: start;
+  padding-left: 25px;
+  padding-right: 36px;
+  padding-top: 10px;
+}
+.cx-price-2-card-single .card-btn .bg-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+.cx-price-2-card-single .card-img {
+  max-width: 166px;
+  width: 100%;
+  height: 260px;
+  border-radius: 14px;
+  mix-blend-mode: luminosity;
+}
+
+/* 
+    price-2-end
 */
 /* 
     footer-1-start
