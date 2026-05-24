@@ -9,6 +9,17 @@
         gap: 36px;
         margin-right: -140px;
         margin-top: -50px;
+
+        @media #{$xs} {
+            margin-right: 0px;
+            margin-top: 50px;
+        }
+
+        .shape-elm {
+            @media #{$xs} {
+                display: none;
+            }
+        }
     }
 
     &-toggle {
@@ -71,9 +82,17 @@
         gap: 25px;
         grid-template-columns: 2fr 1.06fr;
         align-items: start;
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr;
+        }
     }
 
     &-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
         &-single {
             background: #EFF0EF;
             border-radius: 20px;
@@ -82,12 +101,43 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
 
+            @media #{$xl,$lg,$md} {
+                flex-direction: column-reverse;
+            }
+
+            @media #{$xs} {
+                padding: 40px 20px;
+                flex-direction: column-reverse;
+            }
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(102.81deg, rgba(0, 166, 80, 0.128) 1.35%, rgba(255, 200, 37, 0.32) 85.55%);
+                border-radius: 20px;
+                z-index: -1;
+                transition: .5s var(--cx-cube-1);
+                opacity: 0;
+            }
 
 
             .left-content {
                 width: 100%;
                 max-width: 290px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 20px;
+                margin-bottom: -40px;
+                overflow: hidden;
             }
 
             .card-btn {
@@ -114,9 +164,118 @@
                 border-radius: 14px;
                 mix-blend-mode: luminosity;
             }
+
+            .plan-name {
+                font-size: 15px;
+                font-weight: 500;
+                background-color: var(--cx-clr-sd-1);
+                padding: 8px 16px;
+                border-radius: 8px;
+                margin-bottom: auto;
+            }
+            
+            .price-elm {
+                font-size: 48px;
+                font-weight: 700;
+                font-style: italic;
+                margin-bottom: 7px;
+
+                .time {
+                    font-weight: 400;
+                    font-size: 18px;
+                    font-style: normal;
+                    color: var(--cx-clr-p-1);
+                }
+
+            }
+            
+            .plan-disc {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+
+            .plan-features {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                justify-content: center;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            .left-content-inner {
+                transform: translateY(64px);
+                transition: .5s var(--cx-cube-1);
+            }
+            
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+                .left-content-inner {
+                    transform: translateY(0px);
+                } 
+            }
         }
         
     }
+
+
+    &-contact {
+        background-color: #011109;
+        padding: 40px;
+        border-radius: 20px;
+
+        @media #{$md,$xs} {
+            padding: 40px 20px;
+        }
+
+        .title {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .disc {
+            color: #fff;
+            opacity: 80%;
+            margin-bottom: 33px;
+        }
+
+        .btn-elm {
+            margin-bottom: 108px;
+        }
+
+        .img-elm {
+            height: 220px;
+            border-radius: 16px;
+            mix-blend-mode: luminosity;
+        }
+
+
+        .cx-pr-btn-1 {
+            background-color: transparent;
+            border: 1px solid #fff;
+        
+            opacity: 72%;
+
+            &:hover {
+                opacity: 1;
+                border-color: transparent;
+            }
+        }
+
+
+    }
+    
+    
+
 }
 
 

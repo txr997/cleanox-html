@@ -362,4 +362,47 @@ const trust2tl = gsap.timeline({
   })
 
 
+// projects-2-animation
+if (window.matchMedia("(min-width: 1200px)").matches) { 
+	if($(".cx-projects-2-height").length) {
+		const project2height = document.querySelector(".cx-projects-2-height");
+		const project2ItemList = document.querySelectorAll(".cx-projects-2-item-card-single");
+		const singleLines = document.querySelectorAll(".single-line");
+
+		project2height.style.height = `${(project2ItemList.length - 1) * 100}vh`;
+
+		const project2ItemListExceptFirst = Array.from(project2ItemList).slice(1);
+		const singleLinesExceptFirst = Array.from(singleLines).slice(1);
+
+		if (singleLines.length > 0) {
+			singleLines[0].style.opacity = 1;
+		}
+
+		const cx_p2_kf = gsap.timeline({
+			scrollTrigger: {
+				trigger: project2height, 
+				start: "top top", 
+				end: "bottom bottom", 
+				toggleActions: "play none none reverse", 
+				scrub: true,
+				markers: false 
+			}
+		});
+
+		if(project2ItemListExceptFirst.length > 0 && singleLinesExceptFirst.length > 0){
+			cx_p2_kf.from(project2ItemListExceptFirst, { 
+				xPercent: 100, 
+				stagger: 1,
+			});
+			cx_p2_kf.to(
+				singleLinesExceptFirst, 
+				{ opacity: 1, stagger: 1 }, 
+				"-=" + (1 * (singleLinesExceptFirst.length - 1))
+			);
+		}
+	}
+}
+
+
+
 })(jQuery);

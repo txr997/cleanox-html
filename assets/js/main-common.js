@@ -11,7 +11,7 @@
 
 // 	lenis-smooth-scroll-activation
 const lenis = new Lenis({
-	duration: .4,
+	duration: .2,
 	easing: (t) => 1 - Math.pow(1 - t, 4),
 	direction: 'vertical', 
 	smooth: true, 
