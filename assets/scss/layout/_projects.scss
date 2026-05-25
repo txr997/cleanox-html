@@ -315,9 +315,13 @@
                 font-size: 40px;
                 max-width: 470px;
                 margin-top: auto;
-
+                transition: .5s var(--cx-cube-1);
                 @media #{$xl,$lg,$md,$xs} {
                     font-size: 24px;
+                }
+
+                &:hover {
+                    color: var(--cx-clr-pr-1);
                 }
             }
 

@@ -167,6 +167,15 @@
                 }
             }
         }
+
+
+        &:hover {
+            .icon-elm {
+                i {
+                    animation: bounce2 1s;
+                }
+            }
+        }
     }
 }
 

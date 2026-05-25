@@ -199,3 +199,205 @@
 /* 
     footer-1-end
 */
+
+/* 
+    footer-2-start
+*/
+.cx-footer-2 {
+    &-area {
+        background-color: #000A05;
+    }
+
+    &-bg-img {
+        position: absolute;
+        inset: 0;
+        mix-blend-mode: luminosity;
+        z-index: -1;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px 65px;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+    
+
+    &-widget {
+        &:nth-child(1) {
+            margin-right: auto;
+        }
+        &-title {
+            font-size: 14px;
+            color: var(--cx-clr-sd-1);
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 8%;
+            margin-bottom: 18px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+
+            li {
+                a {
+                    font-family: var(--cx-font-1);
+                    color: #fff;
+                    line-height: 1.5;
+                    font-size: 16px;
+                    transition: .5s var(--cx-cube-1);
+
+                    &:hover {
+                        color: var(--cx-clr-sd-1);
+                    }
+                }
+            }
+        }
+    }
+
+
+    &-contact {
+        &-number {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 40px;
+
+            .icon-elm {
+                width: 32px;
+                height: 32px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(102.81deg, #00A650 1.35%, #FFC825 85.55%);
+                border-radius: 50%;
+            }
+
+            .title {
+                font-size: 14px;
+                color: #fff;
+
+                a {
+                    transition: .5s var(--cx-cube-1);
+                    &:hover {
+                        color: var(--cx-clr-sd-1);
+                    }
+                }
+            }
+        }
+
+        &-join {
+            font-size: 14px;
+            color: #fff;
+            transition: 0.5s var(--cx-cube-1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                transition: 0.5s var(--cx-cube-1);
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                color: var(--cx-clr-sd-1);
+
+                i {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+
+    &-social {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .link-elm {
+            font-size: 20px;
+            color: #fff;
+            transition: .5s var(--cx-cube-1);
+
+            &:hover {
+                color: var(--cx-clr-sd-1);
+            }
+        }
+    }
+    
+
+    &-marquee {
+        background-color: #00A650;
+        overflow: hidden;
+        padding: 18px 0px;
+
+        &-wrap {
+            display: flex;
+            gap: 15px;
+
+            .text-elm {
+                font-size: 96px;
+                font-weight: 800;
+                letter-spacing: 2%;
+                flex: 0 0 auto;
+
+
+                @media #{$xl} {
+                    font-size: 80px;
+                }
+
+                @media #{$lg} {
+                    font-size: 70px;
+                }
+
+                @media #{$md} {
+                    font-size: 60px;
+                }
+
+                @media #{$xs} {
+                    font-size: 40px;
+                }
+
+                @media #{$sm} {
+                    font-size: 50px;
+                }
+
+                span {
+                    -webkit-text-stroke: 1px #000;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+
+    &-copyright {
+        font-size: 16px;
+        color: rgb(255 255 255 / 64%);
+        text-align: center;
+        padding: 24px 0;
+
+        a {
+            color: #fff;
+            transition: var(--cx-cube-1);
+
+            &:hover {
+                color: var(--cx-clr-sd-1);
+            }
+        }
+    }
+    
+
+}
+
+
+
+
+/* 
+    footer-2-end
+*/

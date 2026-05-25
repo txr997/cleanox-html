@@ -16,9 +16,13 @@
         }
 
         .shape-elm {
+            transform-origin: top;
+            animation: swing 10s linear infinite;
             @media #{$xs} {
                 display: none;
             }
+
+    
         }
     }
 

@@ -46,7 +46,7 @@ gsap.registerPlugin(
 gsap.config({
 	nullTargetWarn: false,
 });
-
+PIXI.utils.skipHello(); 
 
 // sticky-header-function
 function waStickyHeader() {

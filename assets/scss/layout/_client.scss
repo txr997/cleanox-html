@@ -162,6 +162,7 @@
         img {
             opacity: 52%;
             max-width: 100px;
+            transition: .3s;
         }
 
 
@@ -178,6 +179,13 @@
                 border-right: 1px solid #D9D9D9;
             }
 
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+                animation: bounce2 1s;
+            }
         }
     }
 }

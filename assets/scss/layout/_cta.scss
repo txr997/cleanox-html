@@ -94,3 +94,85 @@
 /* 
     cta-1-end
 */
+/* 
+    cta-2-start
+*/
+.cx-cta-2 {
+    &-area {
+        min-height: 1115px;
+
+        @media #{$xl,$lg,$md,$xs} {
+            min-height: 800px;
+        }
+    }
+
+    &-bg-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 242px );
+        z-index: -1;
+    }
+
+
+    &-content {
+        max-width: 672px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: sticky;
+        top: 100px;
+
+        .cx-sec-title-2 {
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 18px;
+
+            span {
+                color: #7A7A7A;
+                display: inline;
+            }
+
+
+            @media #{$xl} {
+                font-size: 50px;
+            }
+
+            @media #{$lg} {
+                font-size: 42px;
+            }
+        
+            @media #{$md} {
+                font-size: 38px;
+            }
+        
+            @media #{$xs} {
+                font-size: 30px;
+            }
+        
+            @media #{$sm} {
+                font-size: 34px;
+            }
+        }
+
+        .disc {
+            margin-bottom: 32px;
+        }
+
+        .cx-pr-btn-1 {
+            background-color: var(--cx-clr-sd-1);
+            color: #000;
+            box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.32);
+
+            &:hover {
+                background-color: var(--cx-clr-pr-1);
+            }
+        }
+    }
+}
+
+
+/* 
+    cta-2-end
+*/

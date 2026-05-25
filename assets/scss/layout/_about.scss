@@ -618,6 +618,11 @@
                 }
             }
             
+            &:hover {
+                .icon-elm {
+                    animation: bounce2 1s;
+                }
+            }
         }
     }
 

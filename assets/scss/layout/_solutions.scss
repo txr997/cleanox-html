@@ -32,6 +32,9 @@
         color: #fff;
         letter-spacing: -1%;
         margin-bottom: -130px;
+        position: relative;
+        z-index: -1;
+
 
         @media #{$xxl} {
             font-size: 55px;
@@ -174,6 +177,7 @@
                 height: 100px;
                 border-radius: 10px;
                 mix-blend-mode: luminosity;
+                transition: .3s;
             }
 
             .content-wrap {
@@ -186,6 +190,11 @@
             .title {
                 font-size: 20px;
                 margin-bottom: 10px;
+                transition: .5s var(--cx-cube-1);
+
+                &:hover {
+                    color: var(--cx-clr-pr-1);
+                }
             }
 
             .disc {
@@ -194,6 +203,10 @@
 
             &:hover {
                 z-index: 1;
+
+                .img-elm  {
+                    mix-blend-mode: normal;
+                }
             }
 
 
