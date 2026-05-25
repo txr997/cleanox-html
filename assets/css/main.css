@@ -3212,10 +3212,14 @@ input:focus::placeholder, textarea:focus::placeholder {
   border-radius: 50%;
   font-size: 16px;
   transition: 0.5s var(--cx-cube-1);
+  opacity: 70%;
+  outline: 1px solid transparent;
 }
 .cx-hero-2-social .link-elm:hover {
   color: var(--cx-clr-pr-1);
   border-color: var(--cx-clr-pr-1);
+  opacity: 1;
+  outline-color: var(--cx-clr-pr-1);
 }
 .cx-hero-2-features {
   position: absolute;
