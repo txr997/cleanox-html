@@ -11,6 +11,15 @@
     margin-bottom: 0;
 }
 
+.cx-p-3 {
+    font-family: var(--cx-font-3);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--cx-clr-p-1);
+    line-height: 150%;
+    margin-bottom: 0;
+}
+
 .cx-h-1 {
     font-family: var(--cx-font-2);
     font-weight: 600;
@@ -24,6 +33,14 @@
     font-weight: 600;
     color: var(--cx-clr-h-2);
     line-height: 1.142;
+    margin-bottom: 0;
+}
+
+.cx-h-3 {
+    font-family: var(--cx-font-2);
+    font-weight: 600;
+    color: var(--cx-clr-h-2);
+    line-height: 120%;
     margin-bottom: 0;
 }
 

@@ -259,3 +259,104 @@
 /* 
     solutions-2-end
 */
+/* 
+    solutions-3-start
+*/
+.cx-solutions-3 {
+    &-area {
+        margin-top: -80px;
+        position: relative;
+        z-index: 1;
+    }
+    &-wrap {
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &-card {
+        text-align: center;
+        border: 1px solid #EFF0EF;
+        border-radius: 12px;
+        padding: 40px 40px;
+        transition: .5s var(--cx-cube-1);
+
+        .icon-elm {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F3FDF4;
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            transition: .5s var(--cx-cube-1);
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 16px;
+
+            a {
+                transition: .5s var(--cx-cube-1);
+                border-bottom: 1px solid transparent;
+            }
+        }
+
+        .disc {
+            margin-bottom: 40px;
+            transition: .5s var(--cx-cube-1);
+        }
+        
+
+        .btn-elm {
+            width: 50px;
+            height: 50px;
+            border: 1px solid var(--cx-clr-pr-1);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: var(--cx-clr-pr-1);
+            transition: .5s var(--cx-cube-1);
+        }
+
+        &:hover {
+            background-color: var(--cx-clr-pr-1);
+            border-color: transparent;
+
+            .icon-elm {
+                background-color: #fff;
+            }
+            .title {
+                color: #fff;
+
+
+                a {
+                    &:hover {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+
+            }
+            .disc {
+                color: #fff;
+            }
+
+            .btn-elm {
+                background-color: #fff;
+                color: var(--cx-clr-pr-1);
+
+                &:hover {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+/* 
+    solutions-3-end
+*/
