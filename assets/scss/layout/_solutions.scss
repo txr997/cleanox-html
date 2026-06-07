@@ -275,6 +275,15 @@
         display: grid;
         gap: 20px;
         grid-template-columns: 1fr 1fr 1fr;
+
+        @media #{$md} {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+
     }
     &-card {
         text-align: center;
@@ -282,6 +291,10 @@
         border-radius: 12px;
         padding: 40px 40px;
         transition: .5s var(--cx-cube-1);
+
+        @media #{$xl,$lg,$md,$xs} {
+            padding: 40px 20px;
+        }
 
         .icon-elm {
             display: inline-flex;
@@ -298,6 +311,10 @@
         .title {
             font-size: 24px;
             margin-bottom: 16px;
+
+            @media #{$xl,$lg,$md,$xs} {
+                font-size: 22px;
+            }
 
             a {
                 transition: .5s var(--cx-cube-1);

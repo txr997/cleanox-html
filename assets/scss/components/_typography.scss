@@ -154,6 +154,27 @@
         font-size: 34px;
     }
 }
+
+.cx-sec-title-3 {
+    font-family: var(--cx-font-3);
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--cx-clr-h-2);
+    margin-bottom: 0;
+    font-size: 40px;
+
+    @media #{$md} {
+        font-size: 38px;
+    }
+
+    @media #{$xs} {
+        font-size: 30px;
+    }
+
+    @media #{$sm} {
+        font-size: 34px;
+    }
+}
 /* 
     typography-end
 */

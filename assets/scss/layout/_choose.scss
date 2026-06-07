@@ -163,3 +163,226 @@
 /* 
     choose-1-end
 */
+
+/* 
+    choose-3-start
+*/
+.cx-choose-3 {
+
+    &-area {
+        background-color: #111F18;
+    }
+
+    &-shape {
+        width: 10%;
+        position: absolute;
+        top: 10%;
+        left: 4%;
+        z-index: -1;
+    }
+
+    &-sec-title {
+        .cx-subtitle-1 {
+            color: #fff;
+            border-color: #fff;
+
+            &::after {
+                background-color: #fff;
+            }
+
+            &::before {
+                background-color: #fff;
+            }
+        }
+
+        .cx-sec-title-3 {
+            color: #fff;
+        }
+    }
+
+    &-wrap {
+        @media #{$over} {
+            margin-left: -190px;
+            margin-right: -190px;
+        }
+    }
+
+    &-item {
+        min-height: 660px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+        padding: 40px 40px;
+
+        @media #{$xl,$lg} {
+            padding: 40px 20px;
+        }
+
+        @media #{$md,$xs} {
+            padding: 40px 20px;
+            min-height: 410px;
+        }
+
+
+        &::after {
+            content: "";
+            inset: 0;
+            background: rgba(0, 0, 0, 0.02);
+            backdrop-filter: blur(18px);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: .5s var(--cx-cube-1);
+            opacity: 0;
+        }
+    
+
+    
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: .5s var(--cx-cube-1);
+
+            i {
+                font-size: 30px;
+            }
+        }
+
+
+
+
+        .posi-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 1;
+            padding: 40px 40px;
+            transition: .5s var(--cx-cube-1);
+            opacity: 0;
+
+            @media #{$xl,$lg,$md,$xs} {
+                padding: 40px 20px;
+            }
+    
+
+            .title {
+                margin-bottom: 16px;
+            }
+
+            .disc {
+                color: #fff;
+                margin-bottom: 32px;
+            }
+        }
+    
+        .number {
+            font-size: 32px;
+            color: #fff;
+            opacity: 80%;
+            transition: .5s var(--cx-cube-1);
+        }
+        
+    }
+
+    
+    &-item-img {
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    &-tabs {
+
+        &-btn {
+            display: flex;
+
+            @media #{$md,$xs} {
+                flex-wrap: wrap;
+            }
+
+            .nav-link {
+                background: transparent;
+                flex: 1;
+
+                @media #{$md,$xs} {
+                    flex: auto;
+                }
+
+                &:not(:last-child) {
+                    .cx-choose-3-item { 
+                        border-right: 1px solid #fff;
+
+                        
+                        @media #{$md,$xs} {
+                            border: none;
+                        }
+                    }
+                }
+
+                &:is(.active) {
+                    .cx-choose-3-item {
+                        &::after {
+                            opacity: 1;
+                        }
+
+                        > .title {
+                            opacity: 0;
+                        }
+                        .posi-content {
+                            opacity: 1;
+                        }
+                        .number {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        &-pane {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            @media #{$md,$xs} {
+                position: relative;
+                margin-top: 30px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                inset: 0;
+                background-color: #111F18;
+                z-index: 1;
+                opacity: 50%;
+            }
+
+            .tab-pane {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+
+}
+
+
+/* 
+    choose-3-end
+*/

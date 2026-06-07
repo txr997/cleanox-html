@@ -722,6 +722,22 @@ if ($('.cx_t2_slider_content').length) {
   
 }
 
+// services-3-slider
+if ($('.cx_s3_slider').length) {
+
+    var cx_s3_slider = new Swiper(".cx_s3_slider", {
+		loop: true,
+		spaceBetween: 24,
+		slidesPerView: "auto",
+		centeredSlides: true,
+		roundLengths: true,
+	});
+  
+}
+
+$('.cx-choose-3-tabs-btn .nav-link').hover(function () {
+    $(this).tab('show');
+});
 
 
 })(jQuery);

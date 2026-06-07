@@ -194,3 +194,26 @@
 /* 
     client-2-end
 */
+
+/* 
+    client-3-start
+*/
+.cx-partner-3 {
+    &-sec-title {
+        margin-bottom: 55px;
+    }
+    &-area {
+        .cx-client-1 {
+            &-logo {
+                min-height: 100px;
+                border: 1px solid #EFF0EF;
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+/* 
+    client-3-end
+*/

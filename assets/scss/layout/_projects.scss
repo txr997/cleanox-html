@@ -399,3 +399,203 @@
 /* 
     projects-2-end
 */
+
+/* 
+    projects-3-start
+*/
+.cx-projects-3 {
+    &-sec-title {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            max-width: 500px;
+        }
+
+        .right {
+            max-width: 450px;
+        }
+
+        .sec-disc {
+            margin-bottom: 28px;
+        }
+    }
+
+
+    &-wrap {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr 1.42fr;
+        align-items: start;
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr ;
+        }
+    }
+
+    &-wrap-2 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr ;
+        }
+    }
+
+    &-wrap-3 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns:  1.42fr 1fr ;
+        align-items: start;
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr ;
+        }
+    }
+    
+    &-item {
+        .img-elm {
+            border-radius: 12px;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 36px;
+
+            &::after {
+                content: "";
+                inset: 0;
+                background-color: #000;
+                position: absolute;
+                opacity: 30%;
+            }
+
+            .img-line-1 {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 24px;
+                left: 24px;
+                border-top: 1px solid #fff;
+                border-left: 1px solid #fff;
+                z-index: 1;
+            }
+
+            .img-line-2 {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 24px;
+                right: 24px;
+                border-top: 1px solid #fff;
+                border-right: 1px solid #fff;
+                z-index: 1;
+            }
+
+            .img-line-3 {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                bottom: 24px;
+                right: 24px;
+                border-bottom: 1px solid #fff;
+                border-right: 1px solid #fff;
+                z-index: 1;
+            }
+
+            .img-line-4 {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                bottom: 24px;
+                left: 24px;
+                border-bottom: 1px solid #fff;
+                border-left: 1px solid #fff;
+                z-index: 1;
+            }
+        }
+
+        .btn-elm {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+
+
+            &-link {
+                width: 80px;
+                height: 80px;
+                background: rgb(0 0 0 / 2%);
+                backdrop-filter: blur(30px);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 24px;
+                opacity: 0;
+                transition: .5s var(--cx-cube-1);
+
+                &:hover {
+                    background-color: var(--cx-clr-pr-1);
+                }
+            }
+            
+        }
+
+        .tags-list {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+
+            li {
+                background-color: #EBFFED;
+                color: var(--cx-clr-pr-1);
+                font-size: 16px;
+                padding: 5px 9px;
+                border-radius: 6px;
+            }
+        }
+        
+        .title {
+            font-size: 24px;
+            transition: .5s var(--cx-cube-1);
+
+            @media #{$lg,$md,$xs} {
+                font-size: 22px;
+            }
+
+            &:hover {
+                color: var(--cx-clr-pr-1);
+            }
+        }
+        
+        .content-wrap {
+            padding: 0 12px;
+            border-bottom: 1px solid rgb(0 0 0 / 10%);
+            padding-bottom: 24px;
+        }
+
+        &:hover {
+            .btn-elm-link {
+                opacity: 1;
+            }
+        }
+    }
+    
+
+    
+
+}
+
+
+
+/* 
+    projects-3-end
+*/
