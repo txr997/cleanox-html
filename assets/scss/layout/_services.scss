@@ -494,6 +494,10 @@
                 @media #{$sm} {
                     height: 340px;
                 }
+
+                img {
+                    transition: 2s;
+                }
             }
 
             .icon-x-number {
@@ -524,6 +528,11 @@
             .title {
                 font-size: 20px;
                 margin-bottom: 16px;
+                transition: .5s var(--cx-cube-1);
+
+                &:hover {
+                    color: var(--cx-clr-pr-1);
+                }
             }
             
             .disc {
@@ -563,6 +572,11 @@
             }
 
             &:hover {
+                .img-elm {
+                    img {
+                        transform: scale(1.05);
+                    }
+                }
                 .btn-elm {
                     .btn-icon {
                         left: calc(100% - 50px);
@@ -571,6 +585,10 @@
                     }
                     .btn-text {
                         opacity: 1;
+                    }
+
+                    &:hover {
+                        color: var(--cx-clr-pr-1);
                     }
                 }
             }

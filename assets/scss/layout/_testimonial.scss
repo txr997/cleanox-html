@@ -365,3 +365,134 @@
 /* 
     testimonial-2-end
 */
+
+/* 
+    testimonial-3-start
+*/
+.cx-testimonial-3 {
+    &-area {
+        background-color: #F3FDF4;
+    }
+    &-sec-title {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            max-width: 570px;
+        }
+
+        .right {
+            max-width: 450px;
+        }
+
+        .sec-disc {
+            margin-bottom: 28px;
+        }
+    }
+
+
+    &-card {
+        padding: 32px;
+        background-color: #fff;
+        border-radius: 24px;
+        transition: .5s var(--cx-cube-1);
+
+        .img-x-logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 80px;
+        }
+
+        .img-elm {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .logo-elm {
+            width: 100px;
+            height: 60px;
+            border: 1px solid rgb(0 0 0 / 10%);
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            transition: .5s var(--cx-cube-1);
+        }
+
+        .icon-elm {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 80px;
+            transition: .5s var(--cx-cube-1);
+        }
+
+
+        .author {
+            &-content {
+                padding-left: 20px;
+                border-left: 1px solid rgb(76 80 78 / 40%);
+                transition: .5s var(--cx-cube-1);
+            }
+
+            &-name {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 12px;
+                transition: .5s var(--cx-cube-1);
+            }
+
+            &-bio {
+                font-size: 16px;
+                transition: .5s var(--cx-cube-1);
+            }
+        }
+
+        &:hover {
+            background-color: var(--cx-clr-pr-1);
+            .logo-elm {
+                border-color: #fff;
+            }
+            .comment {
+                color: #fff;
+            }
+
+            .author {
+                &-content {
+                    border-color: #ffffff59;
+                }
+                &-name {
+                    color: #fff;
+                }
+                &-bio {
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+    
+
+
+    &-slider {
+        .swiper-wrapper {
+            .swiper-slide {
+                max-width: 416px;
+            }
+        }
+    }
+}
+/* 
+    testimonial-3-end
+*/

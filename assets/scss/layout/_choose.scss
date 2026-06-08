@@ -319,7 +319,7 @@
 
                 &:not(:last-child) {
                     .cx-choose-3-item { 
-                        border-right: 1px solid #fff;
+                        border-right: 1px solid rgb(255 255 255 / 50%);
 
                         
                         @media #{$md,$xs} {

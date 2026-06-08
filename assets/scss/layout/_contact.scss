@@ -234,3 +234,208 @@
 /* 
     contact-1-end
 */
+
+
+/* 
+    contact-3-start
+*/
+.cx-contact-3 {
+    &-area {
+        &::after {
+            position: absolute;
+            content: "";
+            width: 49%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            background-color: #111F18;
+            clip-path: polygon(44% 0%, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+    &-marquee {
+        &-wrap {
+            display: flex;
+            gap: 24px;
+            margin-right: 24px;
+
+            .single-item {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                flex: 0 0 auto;
+
+                .text-elm {
+                    font-size: 100px;
+                    letter-spacing: -2%;
+                    -webkit-text-stroke: 1px #000;
+                    -webkit-text-fill-color: transparent;
+                    opacity: 20%;
+                    line-height: 1.2;
+                }
+
+                .icon-elm {
+                    img {
+                        animation: wa-rotated-minus 10s linear infinite;
+                    }
+                }
+            }
+        }
+    }
+
+    &-form {
+        background: linear-gradient(98.06deg, #F2D805 0%, #EEE250 25.41%, #EBED9A 49.65%, #E8F5D3 75.14%, #E8F5D3 100%);
+        border-radius: 12px;
+        padding: 72px 72px;
+
+        @media #{$md,$xs} {
+            padding: 72px 22px;
+        }
+
+        .cx-contact-1-form {
+            max-width: 686px;
+            gap: 32px;
+
+            &-label {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+
+            &-input {
+                border-radius: 100px;
+                border: none;
+
+                &:is(textarea) {
+                    border-radius: 24px;
+                    padding-top: 17px;
+                }
+            }
+        }
+
+
+        &-img {
+            position: absolute;
+            right: -180px;
+            bottom: 0;
+            width: 54%;
+            text-align: right;
+
+            @media #{$lg,$md,$xs} {
+                position: unset;
+                width: 100%;
+                margin-bottom: -72px;
+            }
+        }
+    }
+    
+    &-bg-shape {
+        width: 41%;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    &-bg {
+        &-bubbles-1 {
+            position: absolute;
+            right: 16%;
+            top: 13%;
+            z-index: 2;
+            width: 7%;
+            text-align: center;
+        }
+        &-bubbles-2 {
+            position: absolute;
+            right: 7%;
+            top: 41%;
+            z-index: 2;
+            width: 4%;
+            text-align: center;
+        }
+        &-bubbles-3 {
+            position: absolute;
+            right: 3%;
+            top: 5%;
+            z-index: 2;
+            width: 4%;
+            text-align: center;
+        }
+    }
+    
+    
+}
+
+
+
+.cx-contact-3-bg-bubbles-1 {
+    animation: bubbleMove1 8s linear infinite alternate;
+}
+
+.cx-contact-3-bg-bubbles-2 {
+    animation: bubbleMove2 10s linear infinite alternate;
+}
+
+.cx-contact-3-bg-bubbles-3 {
+    animation: bubbleMove3 12s linear infinite alternate;
+}
+
+@keyframes bubbleMove1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(20px, -15px);
+    }
+    50% {
+        transform: translate(-15px, -30px);
+    }
+    75% {
+        transform: translate(-25px, 10px);
+    }
+    100% {
+        transform: translate(15px, 20px);
+    }
+}
+
+@keyframes bubbleMove2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-20px, 20px);
+    }
+    50% {
+        transform: translate(15px, -25px);
+    }
+    75% {
+        transform: translate(25px, 10px);
+    }
+    100% {
+        transform: translate(-10px, -15px);
+    }
+}
+
+@keyframes bubbleMove3 {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(25px, 15px);
+    }
+    50% {
+        transform: translate(-20px, -20px);
+    }
+    75% {
+        transform: translate(15px, -35px);
+    }
+    100% {
+        transform: translate(-15px, 10px);
+    }
+}
+
+/* 
+    contact-3-end
+*/

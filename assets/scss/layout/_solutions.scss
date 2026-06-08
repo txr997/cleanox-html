@@ -341,7 +341,7 @@
             transition: .5s var(--cx-cube-1);
         }
 
-        &:hover {
+        &:is(.active) {
             background-color: var(--cx-clr-pr-1);
             border-color: transparent;
 
