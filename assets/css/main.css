@@ -9290,6 +9290,201 @@ input:focus::placeholder, textarea:focus::placeholder {
     footer-3-end
 */
 /* 
+    breadcrumb-start
+*/
+.cx-breadcrumb-area {
+  background-color: #002111;
+  padding-top: 240px;
+}
+@media (max-width: 767px) {
+  .cx-breadcrumb-area {
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .cx-breadcrumb-area {
+    padding-top: 150px;
+  }
+}
+.cx-breadcrumb-area::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, #002111 20%, transparent 70%);
+}
+.cx-breadcrumb-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
+@media (max-width: 767px) {
+  .cx-breadcrumb-wrap {
+    gap: 80px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .cx-breadcrumb-wrap {
+    gap: 130px;
+  }
+}
+.cx-breadcrumb-title {
+  font-family: var(--cx-font-2);
+  font-size: 64px;
+  line-height: 1.058;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .cx-breadcrumb-title {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .cx-breadcrumb-title {
+    font-size: 55px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .cx-breadcrumb-title {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cx-breadcrumb-title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .cx-breadcrumb-title {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .cx-breadcrumb-title {
+    font-size: 40px;
+  }
+}
+.cx-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  align-self: start;
+  background: #fff;
+  backdrop-filter: blur(6px);
+  border-radius: 12px 12px 0 0;
+  padding: 19px 28px;
+  position: relative;
+  z-index: 1;
+}
+.cx-breadcrumb-list a, .cx-breadcrumb-list span {
+  font-size: 18px;
+  font-family: var(--cx-font-2);
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+}
+.cx-breadcrumb-list a {
+  padding-right: 26px;
+  position: relative;
+  transition: 300ms;
+  margin-right: 9px;
+}
+.cx-breadcrumb-list a:hover {
+  color: var(--cx-clr-pr-1);
+}
+.cx-breadcrumb-list a::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/breadcrumb/up-arrow.svg);
+  width: 17px;
+  height: 19px;
+  right: 0px;
+  top: 8px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.cx-breadcrumb-list span {
+  opacity: 60%;
+}
+
+/* 
+    breadcrumb-end
+*/
+/* 
+    error-start
+*/
+.cx-error-page-wrap {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .cx-error-page-wrap {
+    grid-template-columns: 1fr 1.7fr;
+  }
+}
+@media (max-width: 767px) {
+  .cx-error-page-wrap {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+.cx-error-page-content .subtitle {
+  font-family: var(--cx-font-2);
+  color: #101010;
+  font-weight: 400;
+  font-size: 80px;
+  margin-bottom: 10px;
+  opacity: 50%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .cx-error-page-content .subtitle {
+    font-size: 40px;
+  }
+}
+.cx-error-page-content .title {
+  font-family: var(--cx-font-2);
+  color: var(--cx-clr-pr-1);
+  font-size: 92px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .cx-error-page-content .title {
+    font-size: 60px;
+  }
+}
+.cx-error-page-content .disc {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--cx-font-1);
+  margin-bottom: 32px;
+  color: #4C504E;
+}
+.cx-error-page-content .st-pr-btn-3 {
+  background-color: var(--st-clr-h-2);
+}
+.cx-error-page-content .st-pr-btn-3::after {
+  background: var(--st-clr-pr-1);
+}
+.cx-error-page-content .st-pr-btn-3:hover {
+  color: #fff;
+}
+.cx-error-page-content .st-pr-btn-3:hover .icon-elm svg path {
+  fill: #fff;
+}
+
+/* 
+    error-end
+*/
+/* 
     pages
 */
 /* 
